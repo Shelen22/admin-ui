@@ -42,15 +42,6 @@ const AdminUI = () => {
           </div>
         ) : null,
     },
-    {
-      title: "Operation",
-      dataIndex: "edit",
-      render: (record) => {
-        <div onClick={() => handleEdit(record.id)}>
-          <a>Edit</a>
-        </div>;
-      },
-    },
   ];
   useEffect(() => {
     Getdata();
